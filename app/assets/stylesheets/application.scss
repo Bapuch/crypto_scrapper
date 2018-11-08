@@ -1,0 +1,147 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ require_tree .
+ require_self
+
+
+ */
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+a {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #666;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+}
+
+navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 40px 0 0;
+}
+
+
+navbar a {
+    margin: 5px 10px;
+}
+
+navbar a:nth-child(3) {
+    margin-right: 20px;
+}
+
+navbar button {
+    color: white;
+    background-color: #4386fb;
+    height: 30px;
+    width: 100px;
+}
+
+#container {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#container img {
+    margin: 0 auto;
+    display: block;
+}
+
+#container input {
+    font-weight: 100;
+    padding: 0 12px;
+    font-size: 18px;
+    height: 34px;
+    width: 476px;
+    border: 1px solid #f2f2f2;
+
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 3px grey;
+
+}
+
+#container input:hover {
+    box-shadow: 0 4px 6px grey;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+}
+
+#buttons {
+    margin: 0 auto;
+    width: 305px;
+}
+
+#buttons button {
+    color: #757575;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    height: 36px;
+    width: 150px;
+}
+
+#buttons button:hover {
+    color: #000000;
+    border: 1px solid darkgray;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer hr {
+    border-color: #e4e4e4;
+    margin-left: -10px;
+}
+
+footer a {
+    padding: 5px 0;
+    margin-right: 15px;
+}
+
+footer span {
+    position: absolute;
+    right: 40px;
+}
+
