@@ -1,3 +1,16 @@
+Pour la team des champions!!!+ MOI !!!
+# ScrapperCrypto-THPS6J4-D28
+
+16H10: scrapper ok MAIS seulement en mode console.
+
+Scrapper prend les valeurs cryptomonnaies et mets dans base
+
+1- git clone https://github.com/MarcelALng/ScrapperCrypto-THPS6J4-D28
+2- bundle install
+3-rails g model Crypto name:string value:string
+4-rails db:migrate
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,4 +35,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# ScrapperCrypto-THPS6J4-D28
+
