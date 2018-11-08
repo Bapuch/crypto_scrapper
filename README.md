@@ -1,15 +1,19 @@
 Pour la team des champions!!!+ MOI !!!
 # ScrapperCrypto-THPS6J4-D28
 
-16H10: scrapper ok MAIS seulement en mode console.
+Collaborateurs : @icedric @Axel @Maixent @Maelle @JonathanMete  @Raphael  @Marcelalng ( le beau goss du dark web)
 
-Scrapper prend les valeurs cryptomonnaies et mets dans base
+
 
 1- git clone https://github.com/MarcelALng/ScrapperCrypto-THPS6J4-D28
-2- bundle install
-3-rails g model Crypto name:string value:string
-4-rails db:migrate
 
+2- bundle install
+
+3-  rails g model Crypto name:string value:string
+
+4- rails db:migrate
+
+En mode Rails S puis localhost:3000 cela peut prendre de 5 à 30 secondes pour parsers les cryptomonnaires donc merci d'être patient ^^!!
 
 # README
 
