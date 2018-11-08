@@ -25,6 +25,9 @@ class StartScrap
   end
 
   def perform
+    if Crypto.first !=nil
+        Crypto.destroy_all
+    end
     get_cryptos
     save
   end

@@ -1,13 +1,11 @@
 
-    <navbar>
-        
-    </navbar>
-    <div id="container">
-        
-        
-        
-    </div>
-  
+<%= form_for @crypto, url: home_show_path do |f| %>
+<div class="form-group">
+      <label>Choix de la crypto</label>
+      <%= f.collection_select :id, Crypto.order(:name),:id,:name, {include_blank: false} %>
+      <%= f.submit %>
+</div>
 
+<% end %>
 
 
