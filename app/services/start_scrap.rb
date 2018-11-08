@@ -25,7 +25,7 @@ class StartScrap
   end
 
   def perform
-    if Crypto.first !=nil
+    if Crypto.first != nil
         Crypto.destroy_all
     end
     get_cryptos
