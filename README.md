@@ -6,7 +6,7 @@
 --------------------------------------------------
 Dear machin,
 
-Attaché à ce repo se trouve l'app <strong>[Search A Movie](https://search-a-movie.herokuapp.com/)</strong>
+Attaché à ce repo se trouve l'app <strong>[Scrap A Crypto](https://scrap-a-crypto.herokuapp.com/)</strong>
 
 
 ### Travail réalisé par
@@ -14,7 +14,7 @@ Attaché à ce repo se trouve l'app <strong>[Search A Movie](https://search-a-mo
 Noms | Pseudo Slack
 ------------ | -------------
 Maëlle Ngachili|@Maëlle
-Cedric Soares|@iCedric
+Cedric Soares|@iCedric -a -m 
 Raphael Caillaux|@Raphael
 Marcel AL Nguyen|@MarcelALng
 Axel Ringard|@Axel
