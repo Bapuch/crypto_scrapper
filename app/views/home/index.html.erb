@@ -3,7 +3,7 @@
 <div class='container col-8 border border-dark rounded p-0 shadow-lg mt-2'>
   <img src="https://strategiccoin.com/wp-content/uploads/2017/09/strategiccoin-page-bg-cryptocurrency.jpg" alt="Avatar" class="w-100 image rounded shadow-lg">
     <h1 class="card-img-overlay text-light font-weight-bokd text-center mt-4 text-monospace">Crypto Currency Scrapper</h1>
-    <div class="card-img-overlay d-flex align-items-center col-10 offset-1">
+    <div class="card-img-overlay d-flex align-items-center justify-content-center">
         <%= form_for @cryptos, url: root_path do |f| %>
           <div class="form-row align-items-center">
             <div class="col-auto my-1">
@@ -18,10 +18,10 @@
             <div class="col-auto my-1">
               <%= f.submit 'Get Price', class: 'btn-lg btn-outline-light' %>
             </div>
-            <% unless @crypto.nil? %>
-              <h2 class='text-light font-weight-bold'> <%= "$%20.4f" % @crypto.value %> </h2>
-            <% end %>
           </div>
+          <% unless @crypto.nil? %>
+            <h2 class='text-warning font-weight-bold text-center'><%= @crypto.name%> : <%= "$%20.4f" % @crypto.value %></h2>
+          <% end %>
         <% end %>
   </div>
 </div>
