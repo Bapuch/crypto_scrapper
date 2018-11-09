@@ -1,11 +1,28 @@
 
-<%= form_for @crypto, url: home_show_path do |f| %>
-<div class="form-group">
-      <label>Choix de la crypto</label>
-      <%= f.collection_select :id, Crypto.order(:name),:id,:name, {include_blank: false} %>
-      <%= f.submit %>
+
+<div class='container col-8 border border-dark rounded p-0 shadow-lg mt-2'>
+  <img src="https://strategiccoin.com/wp-content/uploads/2017/09/strategiccoin-page-bg-cryptocurrency.jpg" alt="Avatar" class="w-100 image rounded shadow-lg">
+    <h1 class="card-img-overlay text-light font-weight-bokd text-center mt-4 text-monospace">Crypto Currency Scrapper</h1>
+    <div class="card-img-overlay d-flex align-items-center col-10 offset-1">
+        <%= form_for @cryptos, url: root_path do |f| %>
+          <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="crypto">Crypto</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text bg-dark text-light font-weight-bold">crypto-currency</div>
+                </div>
+                <%= f.collection_select :id,  Crypto.order(:name),:id,:name, {include_blank: false}, id: 'crypto', class: 'form-control' %>
+              </div>
+            </div>
+            <div class="col-auto my-1">
+              <%= f.submit 'Get Price', class: 'btn-lg btn-outline-light' %>
+            </div>
+            <% unless @crypto.nil? %>
+              <h2 class='text-light font-weight-bold'> <%= "$%20.4f" % @crypto.value %> </h2>
+            <% end %>
+          </div>
+        <% end %>
+  </div>
 </div>
-
-<% end %>
-
 
